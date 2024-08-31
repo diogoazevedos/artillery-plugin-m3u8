@@ -1,6 +1,6 @@
 {
 	"name": "artillery-plugin-m3u8",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "HTTP Live Streaming (HLS) support for Artillery",
 	"main": "lib/plugin.js",
 	"files": [
