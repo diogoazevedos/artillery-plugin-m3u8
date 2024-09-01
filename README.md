@@ -1,6 +1,6 @@
 # HTTP Live Streaming (HLS) for Artillery
 
-Load test HLS endpoints using [Artillery](https://artillery.io). The plugin parses the manifest, pick a random variant, and download all its segments.
+Load test HLS endpoints using [Artillery](https://artillery.io). The plugin parses the playlist and download all its segments. A random variant is selected for master playlist.
 
 ## Usage
 
@@ -18,7 +18,7 @@ config:
 
 ### Setup
 
-Add the URL to the `.m3u8` manifest.
+Add the URL to the `.m3u8` playlist.
 
 ```yaml
 scenarios:
@@ -26,5 +26,3 @@ scenarios:
       - get:
           url: '/path/to/.m3u8'
 ```
-
-> **Note**: Media playlist is **NOT** supported.
